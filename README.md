@@ -34,10 +34,14 @@ and combine them with `Composite` TOPs.
 
 <img src="readme_images/rgb_keying_guide.png" width="1000">
 
+### White
+
 To isolate the *white elements* of the image, use an `RGB Key`, 
 and increase `Red Min` or `Blue Min` slightly, until the white is the only non-transparent layer. 
 
 You can then use a `Composite` TOP set to `Multiply` to replace the white elements with any video.
+
+### Green 
 
 To *isolate the green background* with an `RGB Key` TOP,
 increase `Green Min` and decrease `Red Max` slightly,
@@ -46,8 +50,14 @@ until now the green background is the only thing that's non-transparent.
 Make it white with an `HSV Adjust` TOP by setting `Saturation Multiplier` to 0.
 Then you can replace this layer with any video using a `Composite` TOP with operation set to `Multiply`
 
+### Black
 
 And to *isolate the black graphic elements*, decrease the `RGB Key`'s `Green Max` parameter.  
 
-To combine the three layers, you can just use `Composite` TOPs with 
+### Combining
+
+After separating the three elements and using them as masks with your videos,
+you'll want to combine the three separate layers.
+
+To combine the layers, you can just use `Composite` TOPs with 
 the compositing operation set to `Atop`
