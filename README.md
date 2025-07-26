@@ -9,7 +9,7 @@ This repo is for
 
 ## Logo Origins
 
-<img src="readme_images/logo_blue_white_meetup_num5.png" width="1000">
+<img src="assets/logo_blue_white_meetup_num5.png" width="1000">
 
 I built the initial logo graphic using Keynote, the default MacOS PowerPoint alternative.
 The file extension for Keynote projects is `.key`, and you can find these files in the `assets/` directory.
