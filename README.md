@@ -2,20 +2,31 @@
 
 assets for logo and reels!
 
-## Project overview
+This repo is for 
+
+1) storing/sharing the logo assets,
+2) a TouchDesigner project for adding animations to the different layers.
+
+## Logo Origins
+
+<img src="readme_images/logo_blue_white_meetup_num5.png" width="1000">
+
+I built the initial logo graphic using Keynote, the default MacOS PowerPoint alternative.
+The file extension for Keynote projects is `.key`, and you can find these files in the `assets/` directory.
+
+If you don't have Keynote,
+fortunately you can work with the `.png` files.
+
+
+## TouchDesigner Project 
 
 <img src="readme_images/tdsf_project_preview.png" width="1000">
 
-I built the logo using Keynote, the default MacOS PowerPoint alternative.
-The file extension for Keynote projects is `.key`, and you can find these files in the `assets/` directory.
+The way the TD project works is:
 
-
-The way this project works is:
-
-I load a `.png` (included in `assets/`) of the logo.
+I load a logo `.png` (included in `assets/`).
 Then I separate the layers using `RGB Key` TOPs, 'replace' them with independent video sources,
 and combine them with `Composite` TOPs.
-
 
 
 
