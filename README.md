@@ -1,4 +1,5 @@
 # logo
+
 assets for logo and reels!
 
 ## Project overview
@@ -6,18 +7,21 @@ assets for logo and reels!
 <img src="readme_images/tdsf_project_preview.png" width="1000">
 
 I built the logo using Keynote, the default MacOS PowerPoint alternative.
+The file extension for Keynote projects is `.key`, and you can find these files in the `assets/` directory.
 
-These are the `.key` files in the `assets/` directory.
 
-Confusingly, I'm also using `RGB Key` TOPs in TouchDesigner.
+The way this project works is:
 
-I use RGB keying so that different layers can be made transparent based on their color.
-and replaced with video or images using `Composite` TOPs.
+I load a `.png` (included in `assets/`) of the logo.
+Then I separate the layers using `RGB Key` TOPs, 'replace' them with independent video sources,
+and combine them with `Composite` TOPs.
+
+
 
 
 ## RGB keying guide
 
-<img src="rgb_keying_guide.png" width="1000">
+<img src="readme_images/rgb_keying_guide.png" width="1000">
 
 To isolate the *white elements* of the image, use an `RGB Key`, 
 and increase `Red Min` or `Blue Min` slightly, until the white is the only non-transparent layer. 
@@ -34,3 +38,5 @@ Then you can replace this layer with any video using a `Composite` TOP with oper
 
 And to *isolate the black graphic elements*, decrease the `RGB Key`'s `Green Max` parameter.  
 
+To combine the three layers, you can just use `Composite` TOP with 
+the compositing operation set to `Atop`
