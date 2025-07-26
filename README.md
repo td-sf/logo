@@ -38,5 +38,5 @@ Then you can replace this layer with any video using a `Composite` TOP with oper
 
 And to *isolate the black graphic elements*, decrease the `RGB Key`'s `Green Max` parameter.  
 
-To combine the three layers, you can just use `Composite` TOP with 
+To combine the three layers, you can just use `Composite` TOPs with 
 the compositing operation set to `Atop`
