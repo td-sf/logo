@@ -17,8 +17,20 @@ The file extension for Keynote projects is `.key`, and you can find these files 
 If you don't have Keynote,
 fortunately you can work with the `.png` files.
 
+## TouchDesigner Project v2
 
-## TouchDesigner Project 
+In v2 we've simplified the system a little. 
+
+Open the example.toe file in the v2/touchdesigner folder. 
+
+The logo_composite COMP has three inputs for each part of the logo. There is a text TOP to insert the number.
+
+Dig into the internals if you want to see how it works.
+
+<img src="readme_images/tdsf_project_preview_v2.png" width="1000">
+
+
+## TouchDesigner Project v1
 
 <img src="readme_images/tdsf_project_preview.png" width="1000">
 
