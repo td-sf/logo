@@ -4,6 +4,7 @@
 # tdsf9.*.toe
 # example.*.toe
 *.*.toe
+base.*.toe
 *.mov
 *.png
 *.jpg
