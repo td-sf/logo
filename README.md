@@ -1,4 +1,4 @@
-# logo
+# Logo
 
 assets for logo and reels!
 
@@ -9,67 +9,35 @@ This repo is for
 
 ## Logo Origins
 
-<img src="assets/logo_blue_white_meetup_num5.png" width="1000">
+<img src="v3/assets/TDSFBlockRGBSquare.png" width="1000" />
 
-I built the initial logo graphic using Keynote, the default MacOS PowerPoint alternative.
-The file extension for Keynote projects is `.key`, and you can find these files in the `assets/` directory.
+Logo v3 what designed by @igierard using Adobe Illustrator as is available under `v3/assets/BigBlock.ai`. A svg version is also available  `v3/assets/BigBlock.svg` The logo uses a modified version of the font Pitch Black. 
+
+Original logo was designed by @TylerMclaughlin using Keynote, the default MacOS PowerPoint alternative.
+The file extension for Keynote projects is `.key`, and you can find these files in the `v1/assets/` directory.
 
 If you don't have Keynote,
 fortunately you can work with the `.png` files.
 
-## TouchDesigner Project v2
+Please do not use v1 or v2 of the logo as derivative has deemed it too similar to their trademarked branding.
 
-In v2 we've simplified the system a little. 
+## Base Project File
 
-Open the example.toe file in the v2/touchdesigner folder. 
+We have provided a base version of the TDSF logo loop for to start new projects with.
 
-The logo_composite COMP has three inputs for each part of the logo. There is a text TOP to insert the number.
+The project provides a base for building new video loops by providing masks and cut outs that you can use to make your creations.
 
-Dig into the internals if you want to see how it works.
+<img src="readme_images/Screenshot-2026-05-02-154526.png" width="1000" />
 
-<img src="readme_images/tdsf_project_preview_v2.png" width="1000">
-
-
-## TouchDesigner Project v1
-
-<img src="readme_images/tdsf_project_preview.png" width="1000">
-
-The way the TD project works is:
-
-I load a logo `.png` (included in `assets/`).
-Then I separate the layers using `RGB Key` TOPs, 'replace' them with independent video sources,
-and combine them with `Composite` TOPs.
+The various masks you may want have been broken out from the base logo in the _base_logo_ COMP
 
 
+The expected output is 2048x2048.
 
-## RGB keying guide
+<img src="readme_images/Screenshot-2026-05-02-154741.png" width="1000" />
 
-<img src="readme_images/rgb_keying_guide.png" width="1000">
+We have included a COMP to easily overlay the #number in the corner as well under the _base_number_overlay_ COMP There are custom parameters for the event number and color.
 
-### White
+Please name your creations `tdsf{EVENT_NUMBER}.toe`
 
-To isolate the *white elements* of the image, use an `RGB Key`, 
-and increase `Red Min` or `Blue Min` slightly, until the white is the only non-transparent layer. 
-
-You can then use a `Composite` TOP set to `Multiply` to replace the white elements with any video.
-
-### Green 
-
-To *isolate the green background* with an `RGB Key` TOP,
-increase `Green Min` and decrease `Red Max` slightly,
-until now the green background is the only thing that's non-transparent.
-
-Make it white with an `HSV Adjust` TOP by setting `Saturation Multiplier` to 0.
-Then you can replace this layer with any video using a `Composite` TOP with operation set to `Multiply`
-
-### Black
-
-And to *isolate the black graphic elements*, decrease the `RGB Key`'s `Green Max` parameter.  
-
-### Combining
-
-After separating the three elements and using them as masks with your videos,
-you'll want to combine the three separate layers.
-
-To combine the layers, you can just use `Composite` TOPs with 
-the compositing operation set to `Atop`
+Keep assets for your project under `v3/assets/tdsf{EVENT_NUMBER}/`
