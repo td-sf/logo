@@ -9,6 +9,8 @@ This repo is for
 
 ## Logo Origins
 
+<img src="v3/assets/TDSFBlockRGBSquare.png" width="1000" />
+
 Logo v3 what designed by @igierard using Adobe Illustrator as is available under `v3/assets/BigBlock.ai`. A svg version is also available  `v3/assets/BigBlock.svg` The logo uses a modified version of the font Pitch Black. 
 
 Original logo was designed by @TylerMclaughlin using Keynote, the default MacOS PowerPoint alternative.

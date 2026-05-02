@@ -9,7 +9,7 @@ This repo is for
 
 ## Logo Origins
 
-<img src="assets/logo_blue_white_meetup_num5.png" width="1000">
+<img src="../v1/assets/logo_blue_white_meetup_num5.png" width="1000">
 
 I built the initial logo graphic using Keynote, the default MacOS PowerPoint alternative.
 The file extension for Keynote projects is `.key`, and you can find these files in the `assets/` directory.
@@ -27,12 +27,12 @@ The logo_composite COMP has three inputs for each part of the logo. There is a t
 
 Dig into the internals if you want to see how it works.
 
-<img src="readme_images/tdsf_project_preview_v2.png" width="1000">
+<img src="../readme_images/tdsf_project_preview_v2.png" width="1000">
 
 
 ## TouchDesigner Project v1
 
-<img src="readme_images/tdsf_project_preview.png" width="1000">
+<img src="../readme_images/tdsf_project_preview.png" width="1000">
 
 The way the TD project works is:
 
@@ -44,7 +44,7 @@ and combine them with `Composite` TOPs.
 
 ## RGB keying guide
 
-<img src="readme_images/rgb_keying_guide.png" width="1000">
+<img src="../readme_images/rgb_keying_guide.png" width="1000">
 
 ### White
 
